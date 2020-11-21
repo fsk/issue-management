@@ -23,5 +23,9 @@ public class Project extends BaseEntity {
     @Column(name = "PROJECT_NAME", length = 1000)
     private String projectName;
 
+    @JoinColumn(name = "MANAGER_USER_ID")
+    @ManyToOne(optional = true, fetch = FetchType.LAZY)
+    private User manager;
+
 
 }
