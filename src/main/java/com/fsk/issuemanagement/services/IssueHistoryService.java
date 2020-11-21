@@ -6,7 +6,7 @@ import org.springframework.data.domain.Pageable;
 
 public interface IssueHistoryService {
 
-    IssueHistory save(IssueHistory IssueHistory);
+    IssueHistory save(IssueHistory issueHistory);
 
     IssueHistory getById(Long id);
 

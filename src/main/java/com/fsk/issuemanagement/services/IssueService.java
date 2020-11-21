@@ -1,17 +1,19 @@
 package com.fsk.issuemanagement.services;
 
+import com.fsk.issuemanagement.dto.IssueDTO;
 import com.fsk.issuemanagement.entities.Issue;
 import com.fsk.issuemanagement.entities.IssueHistory;
+import com.fsk.issuemanagement.utils.TPage;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 public interface IssueService {
 
-    Issue save(Issue issue);
+    IssueDTO save(IssueDTO issue);
 
-    Issue getById(Long id);
+    IssueDTO getById(Long id);
 
-    Page<Issue> getAllPageable(Pageable pageable);
+    TPage<IssueDTO> getAllPageable(Pageable pageable);
 
-    Boolean delete(Issue issue);
+    Boolean delete(IssueDTO IssueDTO);
 }

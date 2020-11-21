@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface ProjectService {
 
-    Project save(Project Project);
+    Project save(Project project);
 
     Project getById(Long id);
 
