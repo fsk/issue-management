@@ -27,9 +27,9 @@ public class Issue extends BaseEntity {
     @Temporal(TemporalType.TIMESTAMP)
     private Date date;
 
-    @Column(name = "ISSUE_STATUS")
-    @Enumerated(EnumType.STRING)
-    private IssueStatus issueStatus;
+//    @Column(name = "ISSUE_STATUS")
+//    @Enumerated(EnumType.STRING)
+//    private IssueStatus issueStatus;
 
     @JoinColumn(name = "ASSIGNEE_USER_ID")
     @ManyToOne(optional = true, fetch = FetchType.LAZY)

@@ -48,7 +48,17 @@ public class IssueServiceImpl implements IssueService {
     }
 
     @Override
-    public Boolean delete(IssueDTO IssueDTO) {
+    public Boolean delete(Long issueId) {
+        issueRepository.deleteById(issueId);
+        return true;
+    }
+
+
+
+
+
+    @Override
+    public IssueDTO update(Long id, IssueDTO issue) {
         return null;
     }
 }

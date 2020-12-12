@@ -27,9 +27,9 @@ public class IssueHistory extends BaseEntity {
     @Temporal(TemporalType.TIMESTAMP)
     private Date date;
 
-    @Column(name = "ISSUE_STATUS")
-    @Enumerated(EnumType.STRING)
-    private IssueStatus issueStatus;
+//    @Column(name = "ISSUE_STATUS")
+//    @Enumerated(EnumType.STRING)
+//    private IssueStatus issueStatus;
 
     @Column(name = "DETAILS", length = 4000)
     private String details;
