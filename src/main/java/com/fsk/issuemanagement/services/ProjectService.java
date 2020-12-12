@@ -1,7 +1,6 @@
 package com.fsk.issuemanagement.services;
 
-import com.fsk.issuemanagement.entities.Issue;
-import com.fsk.issuemanagement.entities.IssueHistory;
+import com.fsk.issuemanagement.dto.ProjectDTO;
 import com.fsk.issuemanagement.entities.Project;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -10,11 +9,11 @@ import java.util.List;
 
 public interface ProjectService {
 
-    Project save(Project project);
+    ProjectDTO save(ProjectDTO project);
 
-    Project getById(Long id);
+    ProjectDTO getById(Long id);
 
-    List<Project> getByProjectCode(String projectCode);
+    Project getByProjectCode(String projectCode);
 
     List<Project> getByProjectCodeContains(String projectCode);
 
@@ -23,4 +22,5 @@ public interface ProjectService {
     Boolean delete(Project project);
 
 
+    ProjectDTO update(Long id, ProjectDTO project);
 }
