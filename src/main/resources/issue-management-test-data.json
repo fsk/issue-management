@@ -1,0 +1,17 @@
+[
+  {
+    "_class": "com.fsk.issuemanagement.entities.Project",
+    "projectCode": "Spring Boot",
+    "projectName": "blog site"
+  },
+  {
+    "_class": "com.fsk.issuemanagement.entities.Project",
+    "projectCode": "Flutter",
+    "projectName": "Plearn"
+  },
+  {
+    "_class": "com.fsk.issuemanagement.entities.Project",
+    "projectCode": "Javascript",
+    "projectName": "Snake Game"
+  }
+]
